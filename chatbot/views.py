@@ -2,7 +2,7 @@ from django.http import JsonResponse
 from django.shortcuts import render
 import openai
 
-openai.api_key = "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"
+openai.api_key = ""
 
 def generate_response(text):
     response = openai.Completion.create(
