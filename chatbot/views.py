@@ -20,10 +20,10 @@ def generate_response(text):
         return None
 
 def get_openai_response(request):
-    user_message = request.GET.get('user_message', '')  # Get user's message from the request
+    user_message = request.GET.get('user_message', '')  
 
-    # Call your OpenAI script here to generate a response
-    message = user_message  # Use the user's message as input
+    
+    message = user_message  
 
     prompt = f"As a soccer expert, can you explain {message} from a soccer standpoint?. Start with sentence, \"As a football expert\""
     response = generate_response(prompt + message)
