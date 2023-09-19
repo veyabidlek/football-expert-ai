@@ -1,0 +1,40 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="{% static 'icon.png' %}" type="image/x-icon" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'chatbot/style.css' %}"
+    />
+
+    <script src="{% static 'chatbot/script.js' %}"></script>
+
+    <title>Football Expert AI</title>
+  </head>
+  <body>
+    <div class="heading">Football Expert AI ⚽️</div>
+    <div class="chat-container">
+      <div class="chat-messages">
+        <div class="message user-message">Hello, who are you?</div>
+        <div class="message">
+          I am the Football Expert. Ask my anything about the beautiful game.
+        </div>
+      </div>
+      <div class="chat-input-container">
+        <input
+          type="text"
+          class="chat-input"
+          id="user-input"
+          placeholder="Type your message..."
+        />
+        <button class="send-button" onclick="sendMessage()">Send</button>
+      </div>
+    </div>
+  </body>
+</html>
